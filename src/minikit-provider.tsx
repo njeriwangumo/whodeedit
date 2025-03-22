@@ -5,6 +5,7 @@ import { MiniKit } from '@worldcoin/minikit-js';
 const APP_ID = "your_app_id_here"; // Replace with your World ID app ID
 
 export default function MiniKitProvider({ children }: { children: ReactNode }) {
+  console.log(MiniKit.isInstalled());
   useEffect(() => {
     // Initialize MiniKit with your app ID
     MiniKit.install(APP_ID);
